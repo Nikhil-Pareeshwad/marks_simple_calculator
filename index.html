@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple maximum marks calculator with input validation.">
+    <title>Maximum Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Maximum Marks Calculator</h1>
+        <p>Enter marks for five subjects (0–100).</p>
+
+        <form id="marksForm" novalidate>
+            <div class="form-group">
+                <label for="subject1">Subject 1</label>
+                <input type="text" inputmode="decimal" id="subject1"
+                    name="subject1" placeholder="Enter marks">
+                <small class="error" id="error1"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="subject2">Subject 2</label>
+                <input type="text" inputmode="decimal" id="subject2"
+                    name="subject2" placeholder="Enter marks">
+                <small class="error" id="error2"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="subject3">Subject 3</label>
+                <input type="text" inputmode="decimal" id="subject3"
+                    name="subject3" placeholder="Enter marks">
+                <small class="error" id="error3"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="subject4">Subject 4</label>
+                <input type="text" inputmode="decimal" id="subject4"
+                    name="subject4" placeholder="Enter marks">
+                <small class="error" id="error4"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="subject5">Subject 5</label>
+                <input type="text" inputmode="decimal" id="subject5"
+                    name="subject5" placeholder="Enter marks">
+                <small class="error" id="error5"></small>
+            </div>
+
+            <button type="submit">Calculate Maximum</button>
+            <button type="reset" class="reset-button">Reset</button>
+
+            <p id="result" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+</body>
+</html>
